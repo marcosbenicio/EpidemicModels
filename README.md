@@ -10,11 +10,11 @@ This model considers a uniform and homogeneous population where individuals are 
 
 2. $S\overset{\lambda}{\Longrightarrow}I$: Susceptible individuals transition to the infected state with a probability of $\lambda$ per unit of time following contact with another infected individual. The rate $\lambda$ reflects a population's predisposition to an epidemic.
 
-- For this process to unfold, a susceptible individual (probability $S$), an infected individual (probability $I$), and successful contagion (probability per unit of time $\lambda$) must be present. Therefore, the probability of a susceptible individual becoming infected after contact is given by $P_{S\to I}=\lambda SI$.
+    2. For this process to unfold, a susceptible individual (probability $S$), an infected individual (probability $I$), and successful contagion (probability per unit of time $\lambda$) must be present. Therefore, the probability of a susceptible individual becoming infected after contact is given by $P_{S\to I}=\lambda SI$.
 
 3. $I\overset{\alpha}{\Longrightarrow}S$: Infected individuals spontaneously revert to the susceptible state with a probability of $\alpha$ at each point in time. The factor $\alpha$ can be interpreted as an intrinsic recovery mechanism within the population.
-
-- This process requires the presence of an infected individual (probability $I$) and their successful recovery (probability per unit of time $\alpha$). The probability of an infected individual spontaneously transitioning back to a susceptible state is thus $P_{S\to I}=\alpha I$.
+      
+      3. This process requires the presence of an infected individual (probability $I$) and their successful recovery (probability per unit of time $\alpha$). The probability of an infected individual spontaneously transitioning back to a susceptible state is thus $P_{S\to I}=\alpha I$.
 
 To ilustrate this model, consider the following diagram:
 
@@ -35,15 +35,15 @@ These equations provide a physical understanding of the system's behavior:
 
 1. The rate of change of the susceptible population over time, $\frac{dS}{dt}$, depends on two competing processes:
 
-- Susceptible individuals becoming infected, which decreases the susceptible population. This is represented by the term $-{\lambda}SI$.
+    1. Susceptible individuals becoming infected, which decreases the susceptible population. This is represented by the term $-{\lambda}SI$.
 
-- Infected individuals recovering and reverting to a susceptible state, which increases the susceptible population. This is represented by the term ${\alpha}I$.
+    2. Infected individuals recovering and reverting to a susceptible state, which increases the susceptible population. This is represented by the term ${\alpha}I$.
 
 2. The rate of change of the infected population over time, $\frac{dI}{dt}$, is also governed by two competing processes:
 
-- Susceptible individuals becoming infected, which increases the infected population. This is represented by the term ${\lambda}SI$.
+    1. Susceptible individuals becoming infected, which increases the infected population. This is represented by the term ${\lambda}SI$.
 
-- Infected individuals recovering and reverting to a susceptible state, which decreases the infected population. This is represented by the term $-{\alpha}I$.
+    2. Infected individuals recovering and reverting to a susceptible state, which decreases the infected population. This is represented by the term $-{\alpha}I$.
 
 These coupled ODEs capture the continuous interplay between the susceptible and infected populations within the SIS model, providing a mathematical representation of the epidemic's progression.
 
@@ -80,19 +80,19 @@ The introduction of a compartment for vaccinated individuals will change the dyn
 
 2. $S\overset{\gamma}{\Longrightarrow}V$: A susceptible individual has a probability of $\gamma$ per unit of time to get vaccinated.
 
-- The process occurs when we find a susceptible individual (with probability S) and with probability $\gamma$, this individual gets vaccinated. The probability of a susceptible individual becoming vaccinated will be $P_{S\to V}=\gamma S$.
+    1. The process occurs when we find a susceptible individual (with probability S) and with probability $\gamma$, this individual gets vaccinated. The probability of a susceptible individual becoming vaccinated will be $P_{S\to V}=\gamma S$.
 
 3. $S\overset{(1-\gamma)\lambda}{\Longrightarrow}I$: A susceptible individual will be transferred to the infected state with a probability of $(1-\gamma)\lambda$ per unit of time after coming into contact with a second infected individual. Here, the predisposition rate for a given population to face an epidemic will be $(1-\gamma)\lambda$.
 
-- The process occurs similarly to the SIS model \eqref{StoI}. The probability of a susceptible individual becoming infected after contact will be $P_{S\to I}=(1-\gamma)\lambda SI$.
+    1. The process occurs similarly to the SIS model \eqref{StoI}. The probability of a susceptible individual becoming infected after contact will be $P_{S\to I}=(1-\gamma)\lambda SI$.
 
 4. $I\overset{\alpha}{\Longrightarrow}S$: Here, again, it will occur as already discussed for the SIS model \eqref{ItoS}.
 
-- The probability of an infected individual spontaneously transforming into a susceptible individual is $P_{I\to S}=\alpha I$.
+    1. The probability of an infected individual spontaneously transforming into a susceptible individual is $P_{I\to S}=\alpha I$.
 
 5. $V\overset{\phi}{\Longrightarrow}S$ A vaccinated individual can become susceptible again with a probability of $\phi$. We can interpret $\phi$ as a rate of loss of immunity for the individual who was vaccinated.
 
-- For this process to occur, it is necessary to find a vaccinated individual (with probability V), and for that individual to lose the immunity provided by the vaccine (with probability $\phi$). The probability of a vaccinated individual becoming susceptible is $P_{V\to S}= \phi V$.
+    1. For this process to occur, it is necessary to find a vaccinated individual (with probability V), and for that individual to lose the immunity provided by the vaccine (with probability $\phi$). The probability of a vaccinated individual becoming susceptible is $P_{V\to S}= \phi V$.
 
 To ilustrate this model, consider the following diagram:
 
@@ -113,23 +113,23 @@ $$
 1. The rate of change of the susceptible population over time, $\frac{dS}{dt}$, depends on four competing processes:
 Susceptible individuals becoming infected, which decreases the susceptible population. This is represented by the term $-{(1-\gamma)\lambda}SI$.
 
-- Susceptible individuals getting vaccinated, which also decreases the susceptible population. This is represented by the term $-{\gamma}S$.
+    1. Susceptible individuals getting vaccinated, which also decreases the susceptible population. This is represented by the term $-{\gamma}S$.
 
-- Infected individuals recovering and reverting to a susceptible state, which increases the susceptible population. This is represented by the term ${\alpha}I$.
+    2. Infected individuals recovering and reverting to a susceptible state, which increases the susceptible population. This is represented by the term ${\alpha}I$.
 
-- Vaccinated individuals losing immunity and reverting to a susceptible state, which increases the susceptible population. This is represented by the term ${\phi}V$.
+    3. Vaccinated individuals losing immunity and reverting to a susceptible state, which increases the susceptible population. This is represented by the term ${\phi}V$.
 
 2. The rate of change of the infected population over time, $\frac{dI}{dt}$, is governed by two competing processes:
 
-- Susceptible individuals becoming infected, which increases the infected population. This is represented by the term ${(1-\gamma)\lambda}SI$.
+    1. Susceptible individuals becoming infected, which increases the infected population. This is represented by the term ${(1-\gamma)\lambda}SI$.
 
-- Infected individuals recovering and reverting to a susceptible state, which decreases the infected population. This is represented by the term $-{\alpha}I$.
+    2. Infected individuals recovering and reverting to a susceptible state, which decreases the infected population. This is represented by the term $-{\alpha}I$.
 
 3. The rate of change of the vaccinated population over time, $\frac{dV}{dt}$, depends on two competing processes:
 
-- Susceptible individuals getting vaccinated, which increases the vaccinated population. This is represented by the term ${\gamma}S$.
+    1. Susceptible individuals getting vaccinated, which increases the vaccinated population. This is represented by the term ${\gamma}S$.
 
-- Vaccinated individuals losing immunity and reverting to a susceptible state, which decreases the vaccinated population. This is represented by the term $-{\phi}V$.
+    2. Vaccinated individuals losing immunity and reverting to a susceptible state, which decreases the vaccinated population. This is represented by the term $-{\phi}V$.
 
 # Results
 
