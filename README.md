@@ -97,7 +97,7 @@ The introduction of a compartment for vaccinated individuals will change the dyn
 To ilustrate this model, consider the following diagram:
 
 <p align="center">
-<img src = "Images/SIS/SISV.png" width="400">
+<img src = "Images/SISV/SISV.png" width="500">
 </p>
 
 In the context of the SISV (Susceptible-Infected-Susceptible-Vaccinated) model, the following set of coupled ordinary differential equations (ODEs) describe the dynamics of the population:
