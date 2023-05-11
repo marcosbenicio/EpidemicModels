@@ -11,7 +11,7 @@
 #define alpha    0.2     // probability of recovery
 #define gamma           // vaccination probability
 
-#define So      0.95     //suscetivel inicial
+#define So      0.95     
 #define Vo      0.0    
 
 
