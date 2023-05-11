@@ -3,6 +3,7 @@
 #include<malloc.h>
 #include<math.h>
 
+
 #define N       1000    //total population
 #define time    1000    //simulation time
 #define sample  10      //number of repeated samples

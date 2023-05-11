@@ -1,3 +1,8 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<malloc.h>
+#include<math.h>
+
 #define N 1000 // total population
 #define time 1000
 #define sample 10
