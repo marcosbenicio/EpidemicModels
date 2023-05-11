@@ -110,8 +110,9 @@ $$
 \end{align}
 $$
 
-1. The rate of change of the susceptible population over time, $\frac{dS}{dt}$, depends on four competing processes:
-Susceptible individuals becoming infected, which decreases the susceptible population. This is represented by the term $-{(1-\gamma)\lambda}SI$.
+The rate of change of the susceptible population over time, $\frac{dS}{dt}$, depends on four competing processes:
+
+1. Susceptible individuals becoming infected, which decreases the susceptible population. This is represented by the term $-{(1-\gamma)\lambda}SI$.
 
     1. Susceptible individuals getting vaccinated, which also decreases the susceptible population. This is represented by the term $-{\gamma}S$.
 
@@ -133,5 +134,49 @@ Susceptible individuals becoming infected, which decreases the susceptible popul
 
 # Results
 
+<p align="center">
+<img src = "Images/SISV/SISV_Rexgamma.png" width="500">
+</p>
 
+
+<p align="center">
+<img src = "Images/SISV/SISV_gammaxphi_alpha02.png" width="500">
+    <img src = "Images/SISV/SISV_lambdaxgamma_phi01_alpha02.png" width="500">
+</p>
+
+
+<p align="center">
+<img src = "Images/SISV/SISV_inf_lambda_gamma01.png" width="500">
+    <img src = "Images/SISV/SISV_inf_lambda_gamma03.png" width="500">
+</p>
+<p align="center">
+<img src = "Images/SISV/SISV_inf_lambda_gamma05.png" width="500">
+</p>
+
+
+<p align="center">
+<img src = "Images/SISV/SISV_gamma01_lambda07_phi05_alpha02.png" width="500">
+    <img src = "Images/SISV/SISV_gamma03_lambda07_phi05_alpha02.png" width="500">
+    <img src = "Images/SISV/SISV_gamma05_lambda07_phi05_alpha02.png" width="500">
+</p>
+
+<p align="center">
+<img src = "Images/SISV/SISV_lambda03.png" width="500">
+    <img src = "Images/SISV/SISV_lambda06.png" width="500">
+    <img src = "Images/SISV/SISV_lambda09.png" width="500">
+</p>
+
+
+<p align="center">
+<img src = "Images/SISV/SISV_gamma03_lambda03_phi05_alpha02.png" width="500">
+    <img src = "Images/SISV/SISV_gamma03_lambda06_phi05_alpha02.png" width="500">
+    <img src = "Images/SISV/SISV_gamma03_lambda07_phi05_alpha02.png" width="500">
+</p>
+
+
+<p align="center">
+<img src = "Images/SISV/SISV_tempo_phi0_lambda07_gamma025.png" width="500">
+    <img src = "Images/SISV/SISV_tempo_phi0_lambda07_gamma05.png" width="500">
+    <img src = "Images/SISV/SISV_tempo_phi0_lambda07_gamma075.png" width="500">
+</p>
 
