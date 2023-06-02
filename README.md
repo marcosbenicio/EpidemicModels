@@ -234,9 +234,9 @@ As we increase the value of $\gamma$, the limit for an epidemic outbreak is redu
 Let's plot the Density of susceptible, infected, and vaccinated individuals over time for these parameters. Here, we've used the parameters $\lambda=0.7$, $\phi=0.5$ for (a) $\gamma=0.1$, (b) $\gamma=0.3$, and (c) $\gamma=0.5$. The points on the graphs represent simulation results, while the lines represent numerical outcomes.
 
 <p align="center">
-<img src = "Images/SISV/SISV_gamma01_lambda07_phi05_alpha02.png" width="500">
-    <img src = "Images/SISV/SISV_gamma03_lambda07_phi05_alpha02.png" width="500">
-    <img src = "Images/SISV/SISV_gamma05_lambda07_phi05_alpha02.png" width="500">
+<img src = "Images/SISV/SISV_gamma01_lambda07_phi05_alpha02.png" width="400">
+    <img src = "Images/SISV/SISV_gamma03_lambda07_phi05_alpha02.png" width="400">
+    <img src = "Images/SISV/SISV_gamma05_lambda07_phi05_alpha02.png" width="400">
 </p>
 
 
