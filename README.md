@@ -216,3 +216,5 @@ Density of susceptible, infected, and vaccinated individuals over time. The para
     <img src = "Images/SISV/SISV_tempo_phi0_lambda07_gamma075.png" width="400">
 </p>
 
+# Reference
+[Dinâmica de epidemias sem e com vacinação: Aproximação de campo médio e simulações de Monte Carlo](https://app.uff.br/riuff;/handle/1/7396)
